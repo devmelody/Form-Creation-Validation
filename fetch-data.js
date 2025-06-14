@@ -10,9 +10,9 @@ async function fetchUserData() {
     users.forEach((user) => {
       const li = document.createElement("li");
       li.textContent = user.name;
-      userList.append(li);
+      userList.appendChild(li);
     });
-    dataContainer.append(userList);
+    dataContainer.appendChild(userList);
   } catch (error) {
     dataContainer.textContent = "Failed to load user data.";
   }
