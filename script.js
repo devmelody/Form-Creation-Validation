@@ -7,9 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let isValid = true;
     const messages = [];
     //validate username
-    const username = document.getElementById("username");
-    const usernameValue = username.value.trim();
-    if (usernameValue.length < 3) {
+    const username = document.getElementById("username").value.trim();
+    if (username.length < 3) {
       isValid = false;
       messages.push("Username is too short");
     }
@@ -24,9 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     //validate password
-    const password = document.getElementById("password");
-    const passwordValue = password.value.trim();
-    if (passwordValue.length < 8) {
+    const password = document.getElementById("password").value.trim(); 
+    if (password.length < 8) {
       isValid = false;
       messages.push("Password length is too short");
     }
